@@ -1,0 +1,25 @@
+
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+ 
+import java.util.Scanner;
+
+// As we have used ScannerClass as main class now we have to save our java program as ScannerClass.java
+
+public class ScannerClass {
+    
+    public static void main(String [] args )
+    {
+        String name;
+        System.out.println("enter name");
+        Scanner scn = new Scanner(System.in);
+        name  = scn.nextLine();
+        System.out.println("your entered string is "  + name  );
+    }
+    
+}
+ 
