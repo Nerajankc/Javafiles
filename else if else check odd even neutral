@@ -1,0 +1,29 @@
+ */
+import java.util.Scanner;
+
+public class Odd_Even {
+    public static void main(String[] args)
+    {  int num; 
+        System.out.println("Enter a number");
+        Scanner scr = new Scanner(System.in);
+        num = scr.nextInt();
+        
+        if(num%2==0 && num !=0 )
+        {
+            System.out.println("number is even");
+        }
+        
+        else if (num%2 !=0)
+                {
+                    System.out.println("number is odd");
+                    
+                }
+        else if (num == 0)
+        {
+            System.out.println(" number is  neutral ");
+            
+        }
+                
+                
+    }
+}
