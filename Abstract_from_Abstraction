@@ -1,0 +1,61 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+abstract class Vehicle {
+    
+    abstract void start();
+  abstract void noofTyre(int n);
+    
+
+}
+
+class Twowheeler extends Vehicle {
+    
+    void start(){
+        System.out.println("  scotter");
+    }
+    void noofTyre(int n) {
+        
+        System.out.println("number of tyres of scotter " + n);
+        
+    }
+    
+}
+
+class Fourwheeler extends Vehicle {
+    void start(){
+        System.out.println("  car ");
+    }
+    void noofTyre(int n){
+         System.out.println("number of tyres of car " + n);
+    }
+}
+
+
+
+
+public class Demo_Abstraction {
+    public static void main(String[] args)
+    {
+        Vehicle obj1 = new Twowheeler();
+        Vehicle obj2 = new Fourwheeler();
+        
+        
+        Vehicle ty1 = new Twowheeler();
+        Vehicle ty2 = new Fourwheeler();
+        
+        
+        
+        obj1.start();
+        obj2.start();
+        
+        ty1.noofTyre(2);
+         ty2.noofTyre(4);
+       
+        
+    }
+    
+}
