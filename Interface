@@ -1,0 +1,42 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+interface  Father {
+    
+   public void property();
+    
+}
+
+interface Mother {
+    
+  public  void love();
+}
+
+class Child implements Father,Mother {
+  
+   public void property(int n)
+    {
+        System.out.println("i have " + n + " million rupess");
+        
+    }
+    
+     public void love(String n)
+     {
+          System.out.println("i  love you"+ " "+ n );
+     }
+    
+}
+ class Interface_Demo {
+     
+  public static void main(String[] args)
+  {
+      Child ch = new Child();
+      ch.property(600);
+      ch.love("so much");
+  }
+      
+    
+}
