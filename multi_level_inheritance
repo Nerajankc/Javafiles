@@ -1,0 +1,43 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+class Student{
+    void  student()
+    {
+        System.out.println("i can learn here ");
+    }
+} 
+
+
+class Teachers extends Student {
+    void teacher()
+    {
+        System.out.println("i can control students ");
+    }
+    
+}
+
+
+
+class Principal  extends Teachers {
+    void principal() {
+    System.out.println("i can control both ");
+}
+    
+}
+
+public class MultiHerit {
+    public static void main(String[] args)
+    {
+        Principal ppl = new Principal();
+        
+        ppl.principal();
+        ppl.teacher();
+        ppl.student();
+        
+        
+    }
+}
