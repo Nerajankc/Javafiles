@@ -1,0 +1,32 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+
+class OuterClass{
+    
+    void display(){
+        InnerClass IC = new InnerClass();
+                IC.Message();
+    }
+    
+    class InnerClass {
+        
+        void Message(){
+            System.out.println("Example of nested class");
+        }
+        
+    }
+    
+}
+        
+public class NestedClass {
+    public static void main(String [] args)
+    {
+        OuterClass OC = new OuterClass();
+        OC.display();
+                
+    }
+}
