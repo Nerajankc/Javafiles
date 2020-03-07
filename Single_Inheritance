@@ -1,0 +1,42 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+
+class Teacher {
+     
+    void tech () {
+        System.out.println("im teaching");
+    }
+    
+}
+
+class Students  extends Teacher {
+    
+     void learn(){
+         System.out.println("Im listing to ");
+     }
+}
+
+public class inhreitance_extends  {
+  
+    public static void main(String[] args)
+            
+    {
+//        Teacher T1 = new Teacher();
+        Students S1 = new Students();
+        inhreitance_extends ie =  new inhreitance_extends ();
+        S1.tech();
+        S1.learn();
+       
+        
+        
+        
+                
+        
+        
+    }
+    
+}
