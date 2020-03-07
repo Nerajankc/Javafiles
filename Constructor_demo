@@ -1,0 +1,32 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+public class Constructor {
+    int id ,age ;
+    String name;
+    Constructor(int a , String b , int c)
+    {
+      id = a;
+       name = b;
+       age = c;
+        
+    }
+    
+    public void display()
+    {
+        System.out.println(id +name  + age );
+    }
+    
+    public static void main(String[] args) 
+    {
+        Constructor con = new Constructor(8 , "nirajan" , 90);
+                con.display();
+                
+               
+        
+    }
+    
+}
