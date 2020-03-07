@@ -1,0 +1,28 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+class Factorail 
+        
+{
+    int Fact(int n)
+    {
+        int result;
+        if(n==1)
+        {
+            return 1 ; 
+        }
+        result = Fact(n-1)*n;
+        return result;
+    }
+}
+public class Factorial_recursive {
+    public static void main(String[] args)
+    {
+        Factorail f = new Factorail();
+        System.out.println("factorail of 3 is "+ f.Fact(3));
+    }
+    
+}
