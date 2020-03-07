@@ -1,0 +1,34 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+class OverridingA{
+    
+    void sum(int a , int b ){
+        System.out.println("sum is " + (a+b));
+    }
+    
+    
+   
+}
+
+class OverridingB extends OverridingA {
+     void sum(int a , int b )
+   {
+        System.out.println("sum of  " + (a+b));
+    
+    
+}
+}
+
+public class MethodOverriding {
+    
+    public static void main(String[] args)
+    {
+        OverridingB ob = new OverridingB();
+        ob.sum(7,8);
+    }
+    
+}
