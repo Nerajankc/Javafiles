@@ -1,0 +1,24 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+
+ class SubClass {   // sub class
+    int x=7;
+     void Message(){  //sub method 
+         
+         System.out.println(x);
+     }
+    
+}
+
+public class ClassConcept { // main class
+     public static void main(String [] args) // main method
+     {
+    SubClass sc = new SubClass();
+    sc.Message();
+     }
+    
+}
