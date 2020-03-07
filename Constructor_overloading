@@ -1,0 +1,54 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+public class Constructor_overloading {
+  int id ;
+          int age ;
+    String name;
+    
+      Constructor_overloading (int a , String b )
+     {
+         id = a;
+         name= b;
+     }
+    
+    
+    Constructor_overloading (int a , String b , int c)
+    {
+      id = a;
+       name = b;
+       age = c;
+        
+    }
+    
+   
+      public void display1()
+    {
+        System.out.println(id +name );
+    }
+    
+    
+    public void display2()
+    {
+        System.out.println(id +name+" "+  + age );
+    }
+   
+    
+    
+    public static void main(String[] args) 
+    {
+        Constructor_overloading con1 = new Constructor_overloading(8 , "nirajan");
+        Constructor_overloading con2 = new Constructor_overloading(8 , "nirajan" , 90);
+        
+              
+                con1.display1();
+                 con2.display2();
+                
+               
+        
+    }
+    
+}
