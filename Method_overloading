@@ -1,0 +1,30 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+class Overloading {
+    
+    void sum(int a , int b) {
+        System.out.println("sum is" + (a+b) );
+    
+}
+    
+    void sum ( int a , int b , int c)
+    {
+        System.out.println("sum is " + (a+b+c) );
+    }
+    
+}
+public class MethodOverloading {
+ 
+    public static void main(String[] args)
+    {
+        Overloading od = new Overloading();
+        od.sum(6,7,8);
+        od.sum(6,7);
+              
+    }
+    
+}
