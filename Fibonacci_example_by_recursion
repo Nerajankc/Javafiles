@@ -1,0 +1,25 @@
+package com.mycompany.testingmain;
+
+/**
+ *
+ * @author niraj
+ */
+public class fibonacci {
+    
+    int fib(int n)
+    {
+        if(n<=1)
+        {
+            return n;
+            
+        }
+        return fib(n-1) + fib(n-2);
+    }
+    
+    public static void main(String[]args)
+    {
+        fibonacci fbs = new fibonacci();
+        System.out.println("fibonacci is " + fbs.fib(5) );
+    }
+    
+}
